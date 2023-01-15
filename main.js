@@ -485,3 +485,214 @@ function int(num, nul) {
 // }
 // console.log(s);
 
+
+// 41-masala
+
+// n soni berilgan shu son ichidan faqat murakkab sonlarni aniqlovchi dastur yozing
+
+
+
+// function murakkab(num) {
+//     S = 0
+//     for (let i = 1; i <= num; i++) {
+//         if (num % i == 0)
+//             S++
+//     }
+//     return S
+// }
+
+// n = 20
+
+// for (i = 1; i <= n; i++) {
+//     if (murakkab(i) > 2) {
+//         console.log(i);
+//     }
+// }
+
+
+// 42-masala
+
+// n soni berilgan shu sonlarni ichidan juft va toq sonlarni kvadratlarini chiqaring
+
+// n=10
+// for (i = 1; i <= n; i++) {
+//     console.log(i*i);
+// }
+
+
+
+
+// 43-masala
+
+// n son berilgan n sonidan kamayish tartibida sonlar chiqarilsin
+
+// n=10
+// for (i = n; i >= 1; i--) {
+//     console.log(i);
+// }
+
+
+
+// 44-masala
+
+
+// n son berilgan 0 va ngacha sonlar orasida 5 ga karralisini tashlab o'tib ketuvchi dastur tuzing
+// n=10
+// for (i = 1; i <= n; i++) {
+//     if (i % 5 == 0) {
+
+//     }
+//     else {
+//         console.log(i);
+//     }
+// }
+
+
+// 45-masala
+
+// n butun son berilgan n gacha butun sonlarni ko'paytmasini topuvchi dastur tuzing
+// s = 1
+// n=19
+// for (i = 1; i <= n; i++) {
+//     s = s * i
+// }
+// console.log(s);
+
+
+// 46-masala
+
+// n butun son berilgan 1 sikldan foydalanib quydagi yigindini hisoblovchi dastur tuzing. 1!+2!+..+n!
+
+function fak(num, nul) {
+    p = 1
+    for (let i = nul; i <= num; i++) {
+        p *= i
+    }
+    return p
+}
+
+
+// S=0
+// n=3
+// for (let i = 1; i <= n; i++) {
+//     S+=fak(i,1)
+// }
+
+// console.log(S);
+
+
+
+// 47-masala
+
+
+// n butun son va x haqiqiy sonlar berilgan (n>0) Quydagi yig'indi hisoblang.1+x+x2/2!+x3/3!+..+xn/n!
+
+
+
+// s = 0
+// n = 9
+// x=6
+// for (i = 1; i <= n; i++) {
+//     s +=i * x / fak(i, 1)
+// }
+// console.log(s);
+
+
+
+
+// 48-masala
+
+
+// n va x sonlar berilgan 0 dan n gacha sonlar orasida x ga bo'linadigan sonlarni topuvchi dastur tuzi
+
+
+// n=10
+// x=5
+
+// for (i = 1; i <= n; i++) {
+//     if (i % x == 0) {
+//       console.log(i);
+//     }
+// }
+
+
+
+// data types
+
+
+// 1-masala
+
+// function res(a) {
+
+//     console.log(Math.floor(a));
+
+// }
+// res(10.3)
+
+
+
+
+// // 2-masala
+
+// function res(M) {
+//     console.log(Math.floor(M / 1000));
+// }
+// res(12654)
+
+
+// 3-masala
+
+// function res(a,b) {
+//     console.log(Math.floor(a/b));
+// }
+// res(55,10)
+
+
+// 4-masala
+
+
+// function res(a) {
+//     console.log(Math.floor(a / 10) + "  o'nliklar xonasidagi son");
+//     console.log(a % 10 +" birliklar xonasidagi son");
+// }
+// res(56)
+
+
+// 5-masala
+
+
+// function res(a) {
+//     console.log(Math.floor(a / 10) + a % 10);
+
+// }
+// res(56)
+
+
+// 6-masala
+
+// function res(a) {
+//     console.log(Math.floor(a / 10) * (a % 10));
+
+// }
+// res(56)
+
+
+// 7-masala
+
+// 999 dan katta son berilgan bolib butun olib va qoldiqli bo'lish operatsiyasidan foydalanib yuzlarni topuvchi dastur tuzing!
+function res(a) {
+    console.log(Math.floor(a / 100)%10);
+}
+res(2452)
+
+
+
+// 8-masala
+
+// function res(t) {
+//     console.log(t / 3600 + " soat boldi");
+//     console.log(t / 60 + " minut boldi");
+// }
+
+
+// res(7200)
